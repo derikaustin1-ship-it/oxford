@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom Oxford Theme Colors */
+.bg-oxford-blue {
+  background-color: #0f2942;
+}
+.bg-oxford-dark {
+  background-color: #091a2b;
+}
+.text-oxford-blue {
+  color: #0f2942;
+}
+.border-oxford-blue {
+  border-color: #0f2942;
+}
+
+.bg-oxford-gold {
+  background-color: #c5a059;
+}
+.text-oxford-gold {
+  color: #c5a059;
+}
+.border-oxford-gold {
+  border-color: #c5a059;
+}
+
+/* Smooth modal backdrop blur */
+.backdrop-blur-custom {
+  backdrop-filter: blur(8px);
+}
